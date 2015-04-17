@@ -1,0 +1,44 @@
+Laboratory Session 2 - Exercise 1: Variables, Operators, Expressions and Statements (20%)
+State whether the following are TRUE or FALSE. Explain why and if the answer is FALSE indicate the correct solution.
+a) The expression (x > y && a < b) is TRUE if either x > y is TRUE or a < b is TRUE.
+b) An expression containing || operator is TRUE if either or both of its operands are TRUE.
+c) The following are correct variable names: sum, 4me, _result, a*b, m67
+d) Assuming that a and b are variables, the following are correct expressions: ab, a && b, a_ * b, a + a / b, a == b
+e) The following expression tests for equality between variables x and b: x = b
+f) The following statement correctly prints x of type integer: printf(“%f”, x);
+g) The following statement correctly reads x of type float: printf(“%f”, &x);
+h) The following expression tests if variable x is greater or equal than variable y: x => y
+i) After the evaluation of x = 7 + 3 * 6 / 2 – 1; x has value 29
+j) Given the equation y = ax 3 +7, the following is a correct C statement: y = (a * x * x * (x + 7))
+
+a) FALSE as both x>y AND a<b need to be TRUE for the expression to be TRUE but it only states 'or'.
+
+b) TRUE as an expression with the 'or' operator (||) requires either of the operands to be TRUE or both of the operands to be TRUE.
+
+c) FALSE as some of the variable names are not valid :
+
+sum is a valid variable name as it just contains letters,
+4me is not a valid variable name as a variable must start with an alphabetic character,
+_result is a valid variable as underscore is considered an alphabetic character,
+a*b is not a valid variable name as it contains a symbol that is not an underscore and
+m67 is a valid variable name as it only contains numbers and letters and starts with an alphabetic character.
+
+d) FALSE as some of the expressions are invalid assuming that a and b are separate variables:
+
+ab is invalid as ab is considered a single variable and does not recognise it as a multiplication. To perform a multiplication in C the correct syntax is a*b.
+a && b is a valid expression that means a and b must be TRUE for the following statement to be executed.
+a_*b is invalid as a_ is not a declared variable. A correct way of writing this would be a*b or to declare a_.
+a+a/b is a valid expression but it is important to be careful when performing mathematical operations in C and to place brackets around expressions to be executed first.
+a==b is a valid operation that tests for equality between a and b.
+
+e) FALSE as this expression does not use == to test for equality but instead uses = which is used for assigning values.
+
+f) FALSE as %f expects a float but this provides an integer, a correct format would be to either us %d instead of %f or to cast x to a double. printf("%f",(double)x);
+
+g) FALSE as printf is used to print to the screen and scanf is used to read input. A correct expression is scanf("%f", &x);
+
+h) FALSE as => is incorrect syntax. It should be written as >=.
+
+i) FALSE it returns a value of 15 to get 29 the expression would need to be written like : '((7+3) * (6/2)) -1;'
+
+j) FALSE. The correct statement should be y = (a*x*x*x)+7;
