@@ -1,0 +1,25 @@
+Laboratory Session 3 - Exercise 1: Variables, Operators, Expressions and Statements (20%)
+State whether the following are TRUE or FALSE. Explain why and if the answer is FALSE indicate the correct solution.
+a) If x is 3 and y is 4, the expression (x+1 >= --y && x == y) is FALSE.
+b) If x is 3.5 and y is 4.5, after y = x+y, x is 3.5 and y is 4.5.
+c) The following are correct declarations: integer _a, B; float 1c; double $$$;
+d) Assuming that a and b are integer variables an their values are 6 and 4 respectively the result of a/b is 1.5
+e) After the execution of the following sequence the value of b is 1.
+  int a = 4;
+  float b = 3;
+  b = a/b;
+  
+a) TRUE. The statement is true because "x+1" is equal to 4, "--y" is equal to 3. So x+1 >= y-- is true. Also "x==y" is true because y is decremented by 1 however "x+1" doesn't change the value of x so they both equal 3.
+
+b) FALSE. "y = x+y" changes the value of y from 4.5 to 8.
+
+c) FALSE. Some of the declarations are not valid :
+
+"integer" is incorrect, "int" will work. 
+"B" works but is bad coding practice, variables should be lower case.
+"1c" - variables must start with an alphabetic character ( _ is considered alphabetic).
+"$$$" - I thought that this should not work as variables much start with an alphabetic character but when I wrote a program to test it, it compiled and ran fine.
+
+d) FALSE. a/b will result in an integer (1). If a and b were floats it would return 1.5.
+
+e) FALSE. This will return 1.333.. because b is a float. To get 1, declare b as an integer.
