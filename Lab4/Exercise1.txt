@@ -1,0 +1,40 @@
+Laboratory Session 4 - Exercise 1: Variables, Operators, Expressions and Statements (20%)
+State whether the following are TRUE or FALSE. Explain why and if the answer is FALSE indicate the correct solution.
+a) An float variable occupies 4 or 8 bytes of memory, whereas an integer variable 4 bytes and a char variable 1 byte
+b) When a new value is stored in a variable, the variable’s resulted value is the old value plus the new value.
+c) It is possible to assign a float value to an integer variable and nothing wrong happens.
+d) There are no mistakes in the following statements:
+  char name[30];
+  scanf(“%s”, &name);
+  printf (“Your name is: %d\n”, name);
+e) If a is equal to 3, all following statements – executed separately and not one after the other - print “a = 4”.
+  printf(“a = %d”, a++);
+  printf(“a = %d”, ++a);
+  printf(“a = %d”, a+1);
+  
+a) FALSE. float is 4 bytes, double is 8 bytes, int can be 2 or 4 bytes and a char is 1 byte. 
+
+b) FALSE. When a new value is stored in a variable it overwrites the variable and replaces its previous value. It does not add the values together. For example:
+  a = 3;
+  a = 4;
+  printf(“The value of a is: %d \n” , a);
+  This prints out the value of a as being 4 not 7 as suggested in the statement.
+  
+c) FALSE. If a float value is assigned to an integer variable the value is forced to become an integer and as a result it loses its decimal places. For example: 
+  float a = 1.5;
+  int b = a;
+  printf(“The value of b is: %d”, b);
+  Instead of printing b as 1.5 it prints out b as 1.
+ 
+d) FALSE.
+  scanf when using strings does not require the ‘&’ on the variable because it does not need to point the variable to a location as a character array is treated as a pointer.
+  printf won't work because it is expecting an int with "%d" but receives a string. %s would work if a string was wanted. 
+  (I am presuming that these statements are taken individually, if they are all one program then the print statement would need to be before the scanf statement too)
+
+e) FALSE. 
+  In printf(“a = %d”, a++);- a is 3 because it's incremented after the printing of a.
+	In both printf(“a = %d”, ++a); and printf(“a = %d”, a+1); a is equal to 4.
+  One way to ensure that a is incremented to 4 would be to increment it outside the print statement and then print the new value of a. For example:
+  int a = 3;
+  a++;
+  printf("a = %d\n", a);
