@@ -3,7 +3,7 @@ Write a program to calculate the hypotenuse of a right-angled triangle, where th
 The program should calculate the length c of the hypotenuse given the formula: c=sqrt(a^2+b^2). 
 Print the value of c to the screen. 
 Redo the problem by reading values for a and b.
-(I have the second part of this problem here: )*/
+(I have the second part of this problem here: https://github.com/AlbertFaust/em108-software-development/blob/master/Lab5/ProblemSet1/Problem1.1.2.c )*/
 
 #include <stdio.h>
 #include <math.h>
