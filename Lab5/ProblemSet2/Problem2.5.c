@@ -29,6 +29,5 @@ int main()
   printf("The total cost is: %.2f Euro \n",total_cost);
   printf("Goodbye from 2.5... \n");
   
-  
   return(0);
 }
