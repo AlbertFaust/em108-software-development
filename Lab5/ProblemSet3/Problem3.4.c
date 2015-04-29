@@ -1,4 +1,4 @@
-*Laboratory Session 5 - Problem Set No. 3 - Problem 3.4
+/*Laboratory Session 5 - Problem Set No. 3 - Problem 3.4
 Write a program to read two numbers n and s. 
 The programs should verify that n divides exactly by s. 
 Then the program should display all the verses of the following nursery rhyme, starting from number n that decreases with step s:
