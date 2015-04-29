@@ -3,7 +3,7 @@ Write a program to calculate the Fibonacci series of numbers, given the length o
 The first two numbers in the series are 1 and 1. 
 Following these, each number of the series is calculated as the sum of the previous two numbers. 
 The program should read n – as the length of the series and to display the first n numbers from the Fibonacci series. 
-Test the program.
+Test the program. */
 
 #include <stdio.h>
 int main()
